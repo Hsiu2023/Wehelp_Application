@@ -57,14 +57,14 @@ table {
 body{
   margin: 0 auto;
   line-height: 1.5;
-  font-size: 18px;
   font-family: 'Noto Sans TC', sans-serif;
   color: black;
-  background-image: url("./pic/back.png");
+  background-image: url("./pic/background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
+
 
 .box {
   margin: 20px;
@@ -115,9 +115,6 @@ p{
   font-size: 20px;
 }
 
-a:visited {
-  color: inherit;
-  }
 
 
 .flex-c{
@@ -136,18 +133,18 @@ a:visited {
 .menu{
  display: flex;
  justify-content: flex-end;
- flex: auto;
 }
 
 .menu a{
-  font-size: 24px;
+  font-size: 28px;
   text-decoration: none;
+  color: black;
 }
 
 .menu a:hover{
-  font-size: 24px;
   text-decoration: none;
-  color: rgb(22, 32, 173);;
+  color: blue;
+  
 }
 
 
@@ -158,12 +155,22 @@ a:visited {
 
 
 @media(max-width:767px) {
+
+  h1 img{
+    transition: .5s filter;
+    filter: sepia() saturate(4) hue-rotate(60deg) brightness(1.5);
+  }
   
   h2{
     margin-top: 20px;
     font-size: 18px;
   }
 
+  .menu a{
+     margin-left: 10px;
+     font-size:16px;
+  }
+  
   p{
     font-size: 16px;
   }
