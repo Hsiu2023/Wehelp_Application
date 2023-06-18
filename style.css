@@ -150,6 +150,12 @@ p{
   margin-right: 50px;
 }
 
+footer{
+ background-color: black;
+ color: white;
+ text-align: center;
+}
+
 
 
 @media(max-width:767px) {
